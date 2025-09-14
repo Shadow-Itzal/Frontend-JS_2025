@@ -1,0 +1,5 @@
+workbench.editor.enablePreview: false
+editor.hover.enabled: false
+editor.SnippetSuggestions: inline
+editor.suggest.preview: true
+emmet.showExpandedAbreviation: true

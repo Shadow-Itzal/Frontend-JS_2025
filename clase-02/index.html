@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listas</title>
+</head>
+<body>
+
+    <h2>Listas ordenadas y no ordenadas</h2>
+
+    <ol>
+        <li>Encender la computadora</li>
+        <li>Abrir el navegador</li>
+        <li>Acceder al sitio web</li>
+    </ol>
+
+    <ul>
+        <li>Pantalla de 15 pulgadas</li>
+        <li>Bateria de larga duracion</li>
+        <li>Procesador Intel Core i7</li>
+    </ul>
+    
+    <h2>Listas anidadas</h2>
+
+    <ol>
+        <li>Elemento 1
+            <ul>
+                <li>Subelemento 1.1</li>
+                <li>Subelemento 1.2</li>
+            </ul>
+        </li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+
+    <h2>Listas de definicion</h2>
+
+    <dl>
+        <dt>HTML</dt>
+            <dd>Lenguaje de marcado utilizado para la creacion de paginas web</dd>
+        <dt>CSS</dt>
+            <dd>Lenguaje utilizado para aplicar estilos y diseños a las paginas</dd>
+        <dt>JavaScript</dt>
+            <dd>Lenguaje de programacion utilizado para agregar interactividad y dinamismo a las paginas web</dd>
+    </dl>
+
+    <h2>Enlaces a otras paginas o sitios web:</h2>
+
+    <a href="https://www.google.com">Ir a Google</a>
+
+    <h2>Enlaces a direcciones de correo electronico</h2>
+
+    <a href="mailto:Yd9oK@example.com">Enviar correo</a>
+
+    <h2>Enlaces a archivos de descarga</h2>
+
+    <a href="https://www.w3schools.com/html/html_links.asp">Descargar archivo</a>
+
+    <br>
+    <!-- pasar libro de cocina pdf para descargar  -->
+
+    <a href="./extras/Cocina vegetariana - Sandra Figueroa de Castro.pdf" download="Cocina vegetariana">descargar PDF</a>
+
+
+    <h2>Ruta absoluta para imagen</h2>
+
+    <a href="https://st3.depositphotos.com/1105977/16512/i/450/depositphotos_165123964-stock-photo-beautiful-colored-trees-with-lake.jpg">Ver imagen</a>
+
+    <h2>Ruta relativa para imagen</h2>
+
+    <a href="./img/el-cafe-con-leche-de-otono-de-acuarela.jpg">Ver imagen</a>
+
+    <br>
+
+    <h2>Etiqueta img</h2>
+
+    <img src="https://st3.depositphotos.com/1105977/16512/i/450/depositphotos_165123964-stock-photo-beautiful-colored-trees-with-lake.jpg" alt="invierno" width="100" height="100">
+
+    <h2>Etiqueta de audio</h2>
+
+    <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls>Tu navegador no soporta el elemento audio</audio>
+
+    <h2>Etiqueta de video</h2>
+
+    <!-- <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls poster="" width="300" height="200">Tu navegador no soporta el elemento video</video> -->
+
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls poster="./img/el-cafe-con-leche-de-otono-de-acuarela.jpg" width="300" height="200">Tu navegador no soporta el elemento video</video>
+
+    <h2>Etiqueta de iframe</h2>
+
+<!-- Aquí incrustamos la página de Wikipedia dentro de un iframe -->
+
+    <iframe src="https://es.wikipedia.org/wiki/HTML" 
+        width="400" 
+        height="250" 
+        style="border:2px solid black;">
+    </iframe>
+
+    <!-- 👉 También puedes usarlo para mostrar un video de YouTube (que es muy común).A menos que youtube no te deje -->
+
+    <iframe src="https://www.youtube.com/watch?v=OwXlS_OqSBQ" 
+        title="Video de YouTube" 
+        width="560" 
+        height="315" 
+        frameborder="1" 
+        allowfullscreen>
+    </iframe>
+
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/LXiWfw8_vHA?si=EaQ9wtmJXN2SIN_O" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
+    <br>
+
+    <!-- Iframe que se adapte al tamaño de la pantalla y conecte a la pag1.html -->
+
+    <iframe src="./pag1.html" 
+        width="100%" 
+        height="300" 
+        frameborder="1" 
+        allowfullscreen>
+    </iframe>
+
+
+    <br>
+
+
+    <footer>Este es el pie de pagina</footer>
+
+
+</body>
+</html>

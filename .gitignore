@@ -1,0 +1,9 @@
+# Ignorar la carpeta del Proyecto Final (todavia en desarrollo)
+ProyFin/
+
+# Ignorar archivos temporales de VSCode
+.vscode/
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db

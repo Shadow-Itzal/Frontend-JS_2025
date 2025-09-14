@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 03</title>
+    <style>
+        footer {
+            text-align: center;   /* Centrar el contenido */
+            padding: 15px;
+            background-color: #76da62;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tablas y formularios</h1>
+
+    <h2>Tablas</h2>
+
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>25</td>
+            <td>Madrid</td>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>30</td>
+            <td>Barcelona</td>
+        </tr>
+    </table>
+
+    <br>
+    <h3>-------------</h3>
+    <br>
+
+    <table border="1">
+        <tr>
+            <th rowspan="2">Nombre</th>
+            <th colspan="2">Contacto</th>
+        </tr>
+        <tr>
+            <td>Teléfono</td>
+            <td>Email</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>123456789</td>
+            <td>ana@ejemplo.com</td>
+        </tr>
+    </table>
+
+    <br>
+    <h3>-------------</h3>
+    <br>
+
+    <table border="1">
+        <caption>Notas por materia</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estudiante</th>
+                <th scope="col">Materia</th>
+                <th scope="col">Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Ana</td>
+                <td>Matemáticas</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Lengua</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td colspan="2">Promedio general</td>
+                <td>8.5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <h3>-------------</h3>
+    <br>
+
+    <h2>Formularios</h2>
+
+    <form action="/registro" method="GET" autocomplete="on">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Ingrese su email">
+        <br>
+        <label for="mensaje">
+        <textarea name="mensaje" id="mensaje" rows="4" cols="50" placeholder="Ingrese su mensaje"></textarea></label>
+        <br>
+        <label for="dia">Elige un periodo del dia:</label>
+        <select name="opciones">
+            <option value="manana">Mañana</option>
+            <option value="tarde">Tarde</option>
+            <option value="noche">Noche</option>
+        </select>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+    <h3>-------------</h3>
+    <br>
+    <!-- poner un pie de pagina con emoji de carita feliz (para buscar emoji= tecla Windows + . (punto)) -->
+
+    <footer>Hecho por MMD 😃 </footer>
+    
+
+
+    
+</body>
+</html>

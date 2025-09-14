@@ -1,0 +1,154 @@
+<!DOCTYPE html> <!-- Indica que el documento esta en HTML -->
+<html>
+
+<head>
+   <title>Ejemplo de formulario</title> <!-- Titulo de la pestaña del navegador -->
+</head>
+
+<body>
+   <!-- Inicio del formulario -->
+   <form action="" method="" target=""> <!-- Formulario (action/method/target aún sin definir) -->
+      <fieldset> <!-- Agrupa visualmente los elementos del formulario -->
+         <legend>
+            <h1>Registro de usuario - Ingrese sus datos</h1> <!-- Titulo del formulario -->
+         </legend>
+
+         <!-- Campo:nombres -->
+         <p>
+            <label for="nombres">Nombres</label> <!-- Texto que describe el campo -->
+            <input type="text" id="nombres" name="nomb" placeholder="Nombre completo" minlength="3" maxlength="30"
+               required>* <!-- Entrada de texto obligatoria, entre 3 y 30 caracteres -->
+         </p>
+
+         <!-- Campo: apellidos -->
+         <p>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" placeholder="Apellidos" size="50px" minlength="3" maxlength="30"
+               required>* <!-- Entrada de texto obligatoria, muestra hasta 50 caracteres de ancho -->
+         </p>
+
+         <!-- Campo: correo electronico -->
+         <p>
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" placeholder="usuario@example.com"
+               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" size="50px" minlength="10" maxlength="50"
+               required>* <!-- Entrada de mail con validacion de formato de correo, entre 10 y 50 caracteres, obligatoria -->
+         </p>
+
+         <!-- Campo: telefono -->
+         <p>
+            <label for="telefono">Número telefónico</label>
+            <input type="tel" id="telefono" placeholder="Número telefónico" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+               required> <!-- Entrada de telefono con validacion de formato de telefono, obligatoria -->
+            <label>Ejem. 123-456-7890</label>
+         </p>
+
+         <!-- Campo: direccion -->
+         <p>
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direc" size="50px" minlength="5" maxlength="30"> <!-- Campo opcional, entre 5 y 30 caracteres -->
+         </p>
+
+         <!-- Campo: codigo postal -->
+         <p>
+            <label for="postal">Código Postal</label>
+            <input type="number" step="any" id="postal" name="postal" minlength="3" maxlength="6"><!-- Entrada numerica, entre 3 y 6 digitos, y acepta decimales (si no se requieren decimales se sacara el step = Any) -->
+         </p>
+
+         <!-- Campo: fecha de nacimiento -->
+         <p>
+            <label for="nacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="nacimiento" placeholder="Fecha de Nacimiento"> <!-- Selector de fecha de nacimiento -->
+         </p>
+
+         <!-- Campo: formacion inicial en programacion -->
+         <p>
+            Formación inicial en programación
+            <label for="opcion1">
+               <input type="radio" name="formacion" id="opcion1" value="si" checked>Sí <!-- Opcion por defecto -->
+            </label>
+            <label for="opcion2">
+               <input type="radio" name="formacion" id="opcion2" value="no">No <!-- Opcion alternativa -->
+            </label>
+         </p>
+
+         <!-- Campo: checkbox de intereses -->
+         <p>
+            Selecciona la información que deseas:
+            <br>
+            <input type="checkbox" id="opcion1" name="info[]" value="Deoprtes">
+            <label for="opcion1">Deoprtes</label>
+            <br>
+            <input type="checkbox" id="opcion2" name="info[]" value="Cocina">
+            <label for="opcion2">Cocina</label>
+            <br>
+            <input type="checkbox" id="opcion3" name="info[]" value="Informática">
+            <label for="opcion3">Informática</label>
+            <br>
+            <input type="checkbox" id="opcion4" name="info[]" value="Salud">
+            <label for="opcion4">Salud</label>
+         </p>
+
+         <!-- Campo: ocupacion con lista desplegable -->
+         <p>
+            <label for="ocupacion">Ocupación</label>
+            <select name="ocupa" id="ocupacion"> <!-- Selector desplegable simple -->
+               <option value=""></option> <!-- Opcion por defecto, vacia -->
+               <optgroup label="Estudia"> <!-- Opcion agrupada -->
+                  <option value="1">Abogado</option>
+                  <option value="2">Ingeniero</option>
+                  <option value="3">M&eacute;dico</option>
+                  <option value="4">Arquitecto</option>
+               </optgroup>
+               <optgroup label="Trabaja">
+                  <option value="abogado">Abogado</option>
+                  <option value="ingeniero">Ingeniero</option>
+                  <option value="medico">M&eacute;dico</option>
+                  <option value="arquitecto">Arquitecto</option>
+               </optgroup>
+            </select>
+            <!-- Lista con seleccion multiple -->
+            <label>Presione la tecla ctrl para selección multiple</label>
+            <select name="ocupa" multiple="true">
+               <option value="musico">Músico</option>
+               <option value="pintor">Pintor</option>
+               <option value="actor">Actor</option>
+               <option value="escultor">Escultor</option>
+            </select>
+         </p>
+
+         <!-- Campo: imagen, subida de archivos (imagen de perfil) -->
+         <p>
+            <label for="imagen">Selecciona tu imagen de perfil</label>
+            <input type="file" accept="" id="imagen" name="imagen"> <!-- permitir solo imagenes -->
+         </p>
+
+         <!-- Campo: contraseña y confirmacion -->
+         <p>
+            <label for="pass">Contraseña</label>
+            <input type="password" id="pass" name="pass" pattern=".{8,}" required>* <!-- Entrada de texto obligatoria, minimo 8 caracteres -->
+            <label for="pass_confirm">Confirmar Contraseña</label>
+            <input type="password" id="pass_confirm" name="pass_confirm" pattern=".{8,n}" required>* <!-- Entrada de texto obligatoria, minimo 8 caracteres -->
+         </p>
+
+         <!-- Campo: descripcion -->
+         <legend>Escribe una descrición de tu persona</legend>
+         <textarea name="descripcion" id="descripcion" cols="100" rows="10"></textarea> <!-- Entrada de texto multilinea -->
+         
+         <!-- Campo: aceptacion de terminos -->
+         <p>
+            <input type="checkbox" name="terminos" id="terminos" required/> <!-- Entrada de checkbox obligatoria -->
+            <label for="terminos">Acepto términos y condiciones</label><br />
+         </p>
+
+         <!-- Botones de envio y limpieza -->
+         <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+         </p>
+      </fieldset>
+   </form>
+   <!-- <button>Genera un boton</button> -->
+</body>
+
+</html>
