@@ -1,6 +1,9 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,100:0072ff&height=200&section=header&text=⚡💻 Front-End%20JS%202025%20 💻⚡&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,100:0072ff&height=200&section=header&text=%E2%9A%A1%F0%9F%92%BB%20Front-End%20JS%202025%20%F0%9F%92%BB%E2%9A%A1&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="banner" />
 </p>
+
+
+
 
 ---
 
