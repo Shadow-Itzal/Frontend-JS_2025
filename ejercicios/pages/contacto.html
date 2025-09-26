@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina de contacto</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="./assets/img/La-cantina-de-frases-logo.jpg" alt="Logo de sitio web" width="650" height="300">
+        <h1>Contacto</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li> <a href="../index.html">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="" method="POST"> <!-- en action va la direccion que me dio formspree -->
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" placeholder="Ingrese su nombre">
+
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su email">
+
+            <br>
+            <label for="mensaje">
+                <textarea name="mensaje" id="mensaje" rows="4" cols="50"
+                    placeholder="Ingrese su frase para la cantina 🍺 "></textarea>
+            </label>
+
+            <br>
+            <button type="submit">Enviar</button>
+            <!-- boton para limpiar -->
+            <button type="reset">Limpiar</button>
+        </form>
+        <br>
+        <br>
+
+        <h2>Mensajes recibidos</h2>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Mensaje</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Fila combinada -->
+                <tr>
+                    <td colspan="4" style="text-align: center; font-weight: bold;">
+                        Mensajes pendientes de respuesta
+                    </td>
+                </tr>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>juanp@example.com</td>
+                    <td>El que mucho abarca... termina con dolor de espalda.</td>
+                    <td>Pendiente</td>
+                </tr>
+                <tr>
+                    <td>María López</td>
+                    <td>mlopez@example.com</td>
+                    <td>Ojos que no ven... seguro estaban mirando el celular.</td>
+                    <td>Pendiente</td>
+                </tr>
+                <tr>
+                    <td>Lionel Herrera</td>
+                    <td>lioher@example.com</td>
+                    <td>El tiempo es oro... y yo ando en números rojos.</td>
+                    <td>Pendiente</td>
+                </tr>
+                <tr>
+                    <td>Carla Ruiz</td>
+                    <td>carliuz@example.com</td>
+                    <td>El que madruga... se encuentra todo cerrado.</td>
+                    <td>Pendiente</td>
+                </tr>
+
+                <!-- Otra sección -->
+                <tr>
+                    <td colspan="4" style="text-align: center; font-weight: bold;">
+                        Mensajes respondidos
+                    </td>
+                </tr>
+                <tr>
+                    <td>Carlos Díaz</td>
+                    <td>cdiaz@example.com</td>
+                    <td>Lo barato sale caro... y lo caro no me alcanza.</td>
+                    <td>Respondido</td>
+                </tr>
+                <tr>
+                    <td>Ana Arias</td>
+                    <td>anarias@example.com</td>
+                    <td>El que busca, encuentra... y después no sabe qué hacer.</td>
+                    <td>Respondido</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </main>
+
+
+
+</body>
+
+</html>

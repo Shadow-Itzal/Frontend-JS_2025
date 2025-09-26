@@ -1,5 +1,21 @@
-workbench.editor.enablePreview: false
-editor.hover.enabled: false
-editor.SnippetSuggestions: inline
-editor.suggest.preview: true
-emmet.showExpandedAbreviation: true
+workbench.editor.enablePreview: false -- Abre los archivos en pestañas permanentes en lugar de temporales.
+
+editor.hover.enabled: false -- Desactiva las ventanas emergentes de informacion que aparecen al pasar el mouse sobre el codigo.
+
+editor.SnippetSuggestions: inline -- Muestra las sugerencias de fragmentos de codigo (snippets) directamente en la lista de autocompletado.
+
+editor.suggest.preview: true -- Muestra una vista previa del codigo que se insertara cuando seleccionas una sugerencia.
+
+emmet.showExpandedAbreviation: true -- Esto muestra una vista previa de como se expandira una abreviacion  de Emmet mientras la escribes.
+
+editor.wordWrap:on -- ajusta codigo largo al tamaño de la  pantalla
+
+editor.formatOnsave: true -- el codigo se formatea atomaticamente cada vez que lo guardas.
+
+
+-----------------..................---------------..........------........
+EXTENSIONES:
+
+Auto Rename Tag -- cambia etiqueta de inicio y cierre automaticamente.
+
+HTML CSS Suport -- Te ayuda a generar selectores de CSS a partir de HTML, sino que tambien ofrece un completo soporte de autocompletado y validacion para clases e ID's entre tus archivos HTML y CSS.

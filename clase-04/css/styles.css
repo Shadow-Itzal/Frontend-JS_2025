@@ -1,0 +1,168 @@
+/* Selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Selector de etiqueta */
+p {
+    color: black;
+    font-size: 16px;
+}
+
+h1 {
+    color: blue; /* color de texto */
+    background-color: yellow; /* color de fondo */
+    text-align: center; /* alineacion del texto */
+    font-weight: bold; /* grosor de la fuente */
+    text-decoration: underline; /* decoracion del texto, como subrayado o tachado */
+    font-style: italic; /* estilo de la fuente, como cursiva o italica */
+    font-size: 24px; /* tamaño de la fuente */
+    /* visibility: visible;  visibilidad del texto, como visible (visible) o oculto (hidden) */
+    /* display: none;  controla como se muestra el texto, como bloque (block) o en linea (inline), o oculto (none) */
+    /* cursor: pointer;  controla el cursor cuando se pasa sobre el texto */
+
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* familia de fuentes */
+    letter-spacing: 8px; /* espaciado entre letras */
+    line-height: 2.5; /* altura de la linea */
+    text-transform: uppercase; /* transformacion del texto, como mayusculas o minusculas */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* sombra del texto */
+}
+
+/* utilizacion del !important */
+h2 {
+    color: rgb(146, 106, 146) !important;
+}
+
+/* Selector de clase */
+.highlight {
+    background-color: yellow;
+}
+
+/* Selector de id */
+
+#main-title {
+    color: green;
+    font-size: 24px;
+}
+
+
+/* Elemento de bloque, es un elemento que ocupa todo el ancho de la pantalla */
+.noticia {
+    background: lightgray;
+}
+
+/* Elemento, es una parte interna del bloque, como un titulo o boton */
+.noticia__titulo {
+    text-transform: capitalize; /* transforma en mayusculas */
+}
+
+/* Modificador. Sirve para cambiar la apariencia o comportamiento del bloque o elemento */
+.noticia--destacada {
+    background-color: cornsilk;
+}
+
+.noticia__titulo--uppercase {
+    text-transform: uppercase;
+}
+
+
+
+
+/* -------  Tipos de Selectores  ------------ */
+
+/* Selector universal */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Selector de etiqueta */
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+/* Selector de clase */
+/* h1 {
+    color: blue;
+    background-color: yellow;
+} */
+
+/* Selector de id */
+/* #parrafo {
+    color: red;
+    font-size: 14px;
+} */
+
+/* Selector de atributo */
+/* a[href="https://www.google.com"] {
+    color: green;
+} */
+
+/* Selector de hijo */
+/* div > p {
+    color: red;
+} */
+
+/* Selector de descendiente */
+/* div p {
+    color: red;
+} */
+
+/* Selector de adyacente */
+/* h1 + p {
+    color: red;
+} */
+
+/* Selector de hermano */
+/* h1 ~ p {
+    color: red;
+} */
+
+/* Selector de pseudo-clase */
+/* a:visited {
+    color: red;
+} */
+
+/* Selector de pseudo-elemento */
+/* p::first-letter {
+    color: red;
+    font-size: 40px;
+} */
+
+/* Selector de pseudo-elemento */
+/* p::first-line {
+    color: red;
+    font-size: 40px;
+} */
+
+/* Selector de pseudo-elemento */
+/* p::selection {
+    color: red;
+    font-size: 40px;
+} */
+
+/* Selector de pseudo-elemento */
+/* p::before {
+    content: "Esto es un parrafo";
+    color: red;
+    font-size: 40px;
+} */
+
+/* Selector de pseudo-elemento */
+/* p::after {
+    content: "Esto es un parrafo";
+    color: red;
+    font-size: 40px;
+} */
+
+/* Selector de pseudo-elemento */
+/* p::marker {
+    content: "Esto es un parrafo";
+    color: red;
+    font-size: 40px;
+} */
+

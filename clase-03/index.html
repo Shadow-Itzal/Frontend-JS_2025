@@ -112,6 +112,53 @@
         <button type="submit">Enviar</button>
     </form>
 
+
+    <br>
+    <h3>-------------</h3>
+    <br>
+    <!-- poner un formulario de busqueda -->
+
+    <form action="/busqueda" method="GET" autocomplete="on">
+        <label for="busqueda">Busqueda:</label>
+        <input type="search" name="busqueda" id="busqueda" placeholder="Ingrese su busqueda">
+        <br>
+        <button type="submit">Buscar</button>
+    </form>
+
+    <br>
+    <h3>-------------</h3>
+    <br>
+    <!-- poner un formulario de login -->
+
+    <form action="/login" method="GET" autocomplete="on">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Ingrese su email">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Ingrese su password">
+        <br>
+        <button type="submit">Login</button>
+    </form>
+
+    <br>
+    <h3>-------------</h3>
+    <br>
+    <!-- poner un formulario de sumar 2 numeros y de un resultado -->
+    <form oninput="result.value=Number(a.value)+Number(b.value)">
+        <input type="number" id="a" name="a">
+    +
+        <input type="number" id="b" name="b">
+    =
+        <output name="result" for="a b"></output>
+    </form>
+
+
+
+
+
+
+
+
     <br>
     <h3>-------------</h3>
     <br>
